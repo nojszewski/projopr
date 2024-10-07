@@ -1,0 +1,2 @@
+# projopr
+Repo - projektowanie oprogramowania
