@@ -18,11 +18,15 @@ const input = document.createElement('input')
 input.type = 'text'
 
 const goBtn = document.createElement('button')
-goBtn.textContent = 'Przejdź'
+goBtn.textContent = 'Stwórz link'
 
 goBtn.addEventListener('click', () => {
-    // window.location.href = input.value
-    window.open('https://' + input.value, '_blank')
+    const link = document.createElement('a')
+    link.href = 'https://' + input.value
+    link.textContent = 'https://' + input.value
+    link.target = '_blank'
+    link.textContent += "\n"
+    div.appendChild(link)
 })
 
 div.appendChild(input)
